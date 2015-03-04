@@ -6,29 +6,33 @@
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>1D41744B-06F3-445F-A875-05A19A558267</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CartScanner</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>D544F8162E6BCF1825DE01741352307749096D7E</key>
+		<key>E65254D3ADB9E8A442EEACA16005A5C44EE88DD5</key>
 		<string>https://github.com/infinite-peripherals/CartScanner.git</string>
 	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CartScanner.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>D544F8162E6BCF1825DE01741352307749096D7E</key>
-		<string>CartScanner/</string>
+		<key>E65254D3ADB9E8A442EEACA16005A5C44EE88DD5</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/infinite-peripherals/CartScanner.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>D544F8162E6BCF1825DE01741352307749096D7E</string>
+	<string>E65254D3ADB9E8A442EEACA16005A5C44EE88DD5</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>D544F8162E6BCF1825DE01741352307749096D7E</string>
+			<string>E65254D3ADB9E8A442EEACA16005A5C44EE88DD5</string>
 			<key>IDESourceControlWCCName</key>
 			<string>CartScanner</string>
 		</dict>
