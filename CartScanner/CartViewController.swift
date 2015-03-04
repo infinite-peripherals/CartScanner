@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 InfinitePeripherals. All rights reserved.
 //
 //  test HQ 
-// more tests
+// more tests Kenny
 
 import UIKit
 import Foundation
