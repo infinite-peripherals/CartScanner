@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A0009861A97247F00A195E2 /* CurrentCart.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A0009841A97247F00A195E2 /* CurrentCart.xcdatamodeld */; };
+		6AF668991A93F8C500395488 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF668981A93F8C500395488 /* AppDelegate.swift */; };
+		6AF6689E1A93F8C500395488 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AF6689C1A93F8C500395488 /* Main.storyboard */; };
+		6AF668A01A93F8C500395488 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AF6689F1A93F8C500395488 /* Images.xcassets */; };
+		6AF668A31A93F8C500395488 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AF668A11A93F8C500395488 /* LaunchScreen.xib */; };
+		6AF668AF1A93F8C500395488 /* CartScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF668AE1A93F8C500395488 /* CartScannerTests.swift */; };
+		6AF668B91A93FA1600395488 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF668B81A93FA1600395488 /* LandingViewController.swift */; };
+		6AF668BB1A93FAA900395488 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF668BA1A93FAA900395488 /* Product.swift */; };
+		6AF668BD1A93FB0100395488 /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF668BC1A93FB0100395488 /* ShoppingCart.swift */; };
+		6AF668BF1A93FBB400395488 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF668BE1A93FBB400395488 /* ScannerViewController.swift */; };
+		6AF668C11A94243900395488 /* AddToCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF668C01A94243900395488 /* AddToCartViewController.swift */; };
+		6AF668C31A94468C00395488 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF668C21A94468C00395488 /* CartViewController.swift */; };
+		6AF668C51A9446B300395488 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF668C41A9446B300395488 /* CheckoutViewController.swift */; };
+		6AF668C91A94487200395488 /* itemTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AF668C81A94487200395488 /* itemTableCell.xib */; };
+		6AF668CB1A94488600395488 /* itemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF668CA1A94488600395488 /* itemCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6AF668A91A93F8C500395488 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6AF6688B1A93F8C500395488 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AF668921A93F8C500395488;
+			remoteInfo = CartScanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6A0009851A97247F00A195E2 /* CurrentCart.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CurrentCart.xcdatamodel; sourceTree = "<group>"; };
+		6AF668931A93F8C500395488 /* CartScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CartScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AF668971A93F8C500395488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AF668981A93F8C500395488 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6AF6689D1A93F8C500395488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6AF6689F1A93F8C500395488 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6AF668A21A93F8C500395488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6AF668A81A93F8C500395488 /* CartScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CartScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AF668AD1A93F8C500395488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AF668AE1A93F8C500395488 /* CartScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartScannerTests.swift; sourceTree = "<group>"; };
+		6AF668B81A93FA1600395488 /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		6AF668BA1A93FAA900395488 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		6AF668BC1A93FB0100395488 /* ShoppingCart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
+		6AF668BE1A93FBB400395488 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		6AF668C01A94243900395488 /* AddToCartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddToCartViewController.swift; sourceTree = "<group>"; };
+		6AF668C21A94468C00395488 /* CartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		6AF668C41A9446B300395488 /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		6AF668C81A94487200395488 /* itemTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = itemTableCell.xib; path = ../itemTableCell.xib; sourceTree = "<group>"; };
+		6AF668CA1A94488600395488 /* itemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = itemCell.swift; path = ../itemCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6AF668901A93F8C500395488 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AF668A51A93F8C500395488 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6AF6688A1A93F8C500395488 = {
+			isa = PBXGroup;
+			children = (
+				6AF668951A93F8C500395488 /* CartScanner */,
+				6AF668AB1A93F8C500395488 /* CartScannerTests */,
+				6AF668941A93F8C500395488 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6AF668941A93F8C500395488 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AF668931A93F8C500395488 /* CartScanner.app */,
+				6AF668A81A93F8C500395488 /* CartScannerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AF668951A93F8C500395488 /* CartScanner */ = {
+			isa = PBXGroup;
+			children = (
+				6AF668C81A94487200395488 /* itemTableCell.xib */,
+				6AF668CA1A94488600395488 /* itemCell.swift */,
+				6AF668B81A93FA1600395488 /* LandingViewController.swift */,
+				6AF668BE1A93FBB400395488 /* ScannerViewController.swift */,
+				6AF668BC1A93FB0100395488 /* ShoppingCart.swift */,
+				6AF668BA1A93FAA900395488 /* Product.swift */,
+				6AF668981A93F8C500395488 /* AppDelegate.swift */,
+				6A0009841A97247F00A195E2 /* CurrentCart.xcdatamodeld */,
+				6AF6689C1A93F8C500395488 /* Main.storyboard */,
+				6AF668C41A9446B300395488 /* CheckoutViewController.swift */,
+				6AF668C21A94468C00395488 /* CartViewController.swift */,
+				6AF668C01A94243900395488 /* AddToCartViewController.swift */,
+				6AF6689F1A93F8C500395488 /* Images.xcassets */,
+				6AF668961A93F8C500395488 /* Supporting Files */,
+			);
+			path = CartScanner;
+			sourceTree = "<group>";
+		};
+		6AF668961A93F8C500395488 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6AF668A11A93F8C500395488 /* LaunchScreen.xib */,
+				6AF668971A93F8C500395488 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6AF668AB1A93F8C500395488 /* CartScannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				6AF668AE1A93F8C500395488 /* CartScannerTests.swift */,
+				6AF668AC1A93F8C500395488 /* Supporting Files */,
+			);
+			path = CartScannerTests;
+			sourceTree = "<group>";
+		};
+		6AF668AC1A93F8C500395488 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6AF668AD1A93F8C500395488 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6AF668921A93F8C500395488 /* CartScanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AF668B21A93F8C500395488 /* Build configuration list for PBXNativeTarget "CartScanner" */;
+			buildPhases = (
+				6AF6688F1A93F8C500395488 /* Sources */,
+				6AF668901A93F8C500395488 /* Frameworks */,
+				6AF668911A93F8C500395488 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CartScanner;
+			productName = CartScanner;
+			productReference = 6AF668931A93F8C500395488 /* CartScanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6AF668A71A93F8C500395488 /* CartScannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AF668B51A93F8C500395488 /* Build configuration list for PBXNativeTarget "CartScannerTests" */;
+			buildPhases = (
+				6AF668A41A93F8C500395488 /* Sources */,
+				6AF668A51A93F8C500395488 /* Frameworks */,
+				6AF668A61A93F8C500395488 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6AF668AA1A93F8C500395488 /* PBXTargetDependency */,
+			);
+			name = CartScannerTests;
+			productName = CartScannerTests;
+			productReference = 6AF668A81A93F8C500395488 /* CartScannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6AF6688B1A93F8C500395488 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = InfinitePeripherals;
+				TargetAttributes = {
+					6AF668921A93F8C500395488 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 465RXD6KCR;
+					};
+					6AF668A71A93F8C500395488 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 6AF668921A93F8C500395488;
+					};
+				};
+			};
+			buildConfigurationList = 6AF6688E1A93F8C500395488 /* Build configuration list for PBXProject "CartScanner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6AF6688A1A93F8C500395488;
+			productRefGroup = 6AF668941A93F8C500395488 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6AF668921A93F8C500395488 /* CartScanner */,
+				6AF668A71A93F8C500395488 /* CartScannerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6AF668911A93F8C500395488 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AF6689E1A93F8C500395488 /* Main.storyboard in Resources */,
+				6AF668C91A94487200395488 /* itemTableCell.xib in Resources */,
+				6AF668A31A93F8C500395488 /* LaunchScreen.xib in Resources */,
+				6AF668A01A93F8C500395488 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AF668A61A93F8C500395488 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6AF6688F1A93F8C500395488 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AF668B91A93FA1600395488 /* LandingViewController.swift in Sources */,
+				6AF668CB1A94488600395488 /* itemCell.swift in Sources */,
+				6AF668991A93F8C500395488 /* AppDelegate.swift in Sources */,
+				6AF668C31A94468C00395488 /* CartViewController.swift in Sources */,
+				6AF668BB1A93FAA900395488 /* Product.swift in Sources */,
+				6AF668C51A9446B300395488 /* CheckoutViewController.swift in Sources */,
+				6AF668C11A94243900395488 /* AddToCartViewController.swift in Sources */,
+				6AF668BF1A93FBB400395488 /* ScannerViewController.swift in Sources */,
+				6AF668BD1A93FB0100395488 /* ShoppingCart.swift in Sources */,
+				6A0009861A97247F00A195E2 /* CurrentCart.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6AF668A41A93F8C500395488 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AF668AF1A93F8C500395488 /* CartScannerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6AF668AA1A93F8C500395488 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6AF668921A93F8C500395488 /* CartScanner */;
+			targetProxy = 6AF668A91A93F8C500395488 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6AF6689C1A93F8C500395488 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AF6689D1A93F8C500395488 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6AF668A11A93F8C500395488 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AF668A21A93F8C500395488 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6AF668B01A93F8C500395488 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6AF668B11A93F8C500395488 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6AF668B31A93F8C500395488 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = CartScanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		6AF668B41A93F8C500395488 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = CartScanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		6AF668B61A93F8C500395488 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CartScannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CartScanner.app/CartScanner";
+			};
+			name = Debug;
+		};
+		6AF668B71A93F8C500395488 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CartScannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CartScanner.app/CartScanner";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6AF6688E1A93F8C500395488 /* Build configuration list for PBXProject "CartScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AF668B01A93F8C500395488 /* Debug */,
+				6AF668B11A93F8C500395488 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AF668B21A93F8C500395488 /* Build configuration list for PBXNativeTarget "CartScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AF668B31A93F8C500395488 /* Debug */,
+				6AF668B41A93F8C500395488 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AF668B51A93F8C500395488 /* Build configuration list for PBXNativeTarget "CartScannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AF668B61A93F8C500395488 /* Debug */,
+				6AF668B71A93F8C500395488 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6A0009841A97247F00A195E2 /* CurrentCart.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6A0009851A97247F00A195E2 /* CurrentCart.xcdatamodel */,
+			);
+			currentVersion = 6A0009851A97247F00A195E2 /* CurrentCart.xcdatamodel */;
+			path = CurrentCart.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6AF6688B1A93F8C500395488 /* Project object */;
+}
