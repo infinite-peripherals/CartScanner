@@ -14,6 +14,8 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     let session         : AVCaptureSession = AVCaptureSession()
     var previewLayer    : AVCaptureVideoPreviewLayer!
     var highlightView   : UIView = UIView()
+    
+    //@IBOutlet weak var highlightView: UIView!
     var scannedString: String?
     
     override func viewDidLoad() {

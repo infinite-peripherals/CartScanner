@@ -106,7 +106,9 @@
 				6AF6689C1A93F8C500395488 /* Main.storyboard */,
 				6AF668C41A9446B300395488 /* CheckoutViewController.swift */,
 				6AF668C21A94468C00395488 /* CartViewController.swift */,
+				6AF668A11A93F8C500395488 /* LaunchScreen.xib */,
 				6AF668C01A94243900395488 /* AddToCartViewController.swift */,
+				6AF668971A93F8C500395488 /* Info.plist */,
 				6AF6689F1A93F8C500395488 /* Images.xcassets */,
 				6AF668961A93F8C500395488 /* Supporting Files */,
 			);
@@ -116,8 +118,6 @@
 		6AF668961A93F8C500395488 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6AF668A11A93F8C500395488 /* LaunchScreen.xib */,
-				6AF668971A93F8C500395488 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -375,12 +375,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CartScanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -388,12 +390,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CartScanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
