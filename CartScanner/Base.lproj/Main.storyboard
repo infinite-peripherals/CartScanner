@@ -54,6 +54,7 @@
                     </view>
                     <connections>
                         <segue destination="wbY-7h-g9J" kind="presentation" identifier="scanned" id="zys-LI-mHK"/>
+                        <segue destination="Lqr-u7-5f9" kind="presentation" identifier="viewTheCart" id="gF2-Qc-k0Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p27-vl-6gi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -294,6 +295,7 @@
         <image name="QRCode" width="248" height="248"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Fux-cS-Ih6"/>
+        <segue reference="gF2-Qc-k0Z"/>
+        <segue reference="Xcu-PJ-o7T"/>
     </inferredMetricsTieBreakers>
 </document>
