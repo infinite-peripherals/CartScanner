@@ -12,6 +12,8 @@ class LandingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "bg2.png")!)
 
         
     }

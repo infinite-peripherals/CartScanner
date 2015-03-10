@@ -22,6 +22,8 @@
 		6AF668C51A9446B300395488 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF668C41A9446B300395488 /* CheckoutViewController.swift */; };
 		6AF668C91A94487200395488 /* itemTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AF668C81A94487200395488 /* itemTableCell.xib */; };
 		6AF668CB1A94488600395488 /* itemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF668CA1A94488600395488 /* itemCell.swift */; };
+		EDA1566D1AAD18DA0018D793 /* scanbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = EDA1566B1AAD18DA0018D793 /* scanbutton.png */; };
+		EDA1566E1AAD18DA0018D793 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDA1566C1AAD18DA0018D793 /* bg.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		6AF668C41A9446B300395488 /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		6AF668C81A94487200395488 /* itemTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = itemTableCell.xib; path = ../itemTableCell.xib; sourceTree = "<group>"; };
 		6AF668CA1A94488600395488 /* itemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = itemCell.swift; path = ../itemCell.swift; sourceTree = "<group>"; };
+		EDA1566B1AAD18DA0018D793 /* scanbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scanbutton.png; sourceTree = "<group>"; };
+		EDA1566C1AAD18DA0018D793 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 		6AF668961A93F8C500395488 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EDA1566B1AAD18DA0018D793 /* scanbutton.png */,
+				EDA1566C1AAD18DA0018D793 /* bg.jpg */,
 				6AF668A11A93F8C500395488 /* LaunchScreen.xib */,
 				6AF668971A93F8C500395488 /* Info.plist */,
 			);
@@ -220,9 +226,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDA1566D1AAD18DA0018D793 /* scanbutton.png in Resources */,
 				6AF6689E1A93F8C500395488 /* Main.storyboard in Resources */,
 				6AF668C91A94487200395488 /* itemTableCell.xib in Resources */,
 				6AF668A31A93F8C500395488 /* LaunchScreen.xib in Resources */,
+				EDA1566E1AAD18DA0018D793 /* bg.jpg in Resources */,
 				6AF668A01A93F8C500395488 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
