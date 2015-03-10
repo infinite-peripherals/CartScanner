@@ -122,13 +122,13 @@
 		6AF668961A93F8C500395488 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
+
 				EDA1566B1AAD18DA0018D793 /* scanbutton.png */,
 				EDA1566C1AAD18DA0018D793 /* bg.jpg */,
 				6AF668A11A93F8C500395488 /* LaunchScreen.xib */,
 				6AF668971A93F8C500395488 /* Info.plist */,
-=======
->>>>>>> b720331cb22608f0980633f399e2a35b034e7331
+
+b720331cb22608f0980633f399e2a35b034e7331
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
