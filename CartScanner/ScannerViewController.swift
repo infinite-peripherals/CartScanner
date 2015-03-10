@@ -14,6 +14,9 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     let session         : AVCaptureSession = AVCaptureSession()
     var previewLayer    : AVCaptureVideoPreviewLayer!
     var highlightView   : UIView = UIView()
+    let myButton: UIButton = UIButton()
+    var boxView:UIView!;
+    
     var scannedString: String?
     
     override func viewDidLoad() {
@@ -62,6 +65,21 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         previewLayer.frame = self.view.bounds
         previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
         self.view.layer.addSublayer(previewLayer)
+        
+        
+        self.boxView = UIView(frame: self.view.frame);
+        myButton.frame = CGRectMake(0,0,200,40)
+        myButton.backgroundColor = UIColor.redColor()
+        myButton.layer.masksToBounds = true
+        myButton.setTitle("View Cart", forState: UIControlState.Normal)
+        myButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        myButton.layer.cornerRadius = 20.0
+        myButton.layer.position = CGPoint(x: self.view.frame.width/2, y:500)
+        myButton.addTarget(self, action: "viewCartPressed:", forControlEvents: .TouchUpInside)
+
+        
+        self.view.addSubview(self.boxView);
+        self.view.addSubview(myButton)
         
         // Start the scanner. You'll have to end it yourself later.
         session.startRunning()
@@ -128,6 +146,10 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         
     }
     
+    @IBAction func viewCartPressed(sender: UIButton) {
+        self.performSegueWithIdentifier("viewTheCart", sender: self)
+        
+    }
     
 
     
@@ -143,6 +165,12 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         if segue.identifier == "scanned" {
             var itemToAdd = segue.destinationViewController as AddToCartViewController
             itemToAdd.scannerBarcode = self.scannedString!
+        }
+        
+        
+        if segue.identifier == "viewTheCart" {
+            var itemToAdd = segue.destinationViewController as CartViewController
+            itemToAdd.fromViewCartButton = true
         }
         
         // Get the new view controller using segue.destinationViewController.

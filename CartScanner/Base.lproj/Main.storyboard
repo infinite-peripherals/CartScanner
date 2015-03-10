@@ -55,6 +55,7 @@
                     </view>
                     <connections>
                         <segue destination="wbY-7h-g9J" kind="presentation" identifier="scanned" id="zys-LI-mHK"/>
+                        <segue destination="Lqr-u7-5f9" kind="presentation" identifier="viewTheCart" id="gF2-Qc-k0Z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p27-vl-6gi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -140,7 +141,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="nNc-br-T4g">
-                                <rect key="frame" x="0.0" y="64" width="600" height="443"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="438"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="R5u-y0-e9f" customClass="itemCell" customModule="CartScanner" customModuleProvider="target">
@@ -162,30 +163,11 @@
                                     <navigationItem title="Your Cart" id="cKB-dZ-8rA"/>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUG-Nr-Lqf">
-                                <rect key="frame" x="478" y="539" width="106" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="106" id="agP-Lz-mGn"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Checkout">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="YsI-vd-QfZ" kind="show" identifier="checkOut" id="qgd-pr-4E4"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KfI-z3-xqw">
-                                <rect key="frame" x="265" y="546" width="70" height="30"/>
-                                <state key="normal" title="Clear Cart">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="clearCartPressed:" destination="Lqr-u7-5f9" eventType="touchUpInside" id="ayx-si-LII"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1j-41-h7n">
-                                <rect key="frame" x="0.0" y="536" width="187" height="44"/>
+                                <rect key="frame" x="16" y="556" width="45" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="GDB-C2-6yb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Back">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -200,27 +182,49 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUG-Nr-Lqf">
+                                <rect key="frame" x="488" y="557" width="106" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="lc6-Wq-onM"/>
+                                    <constraint firstAttribute="width" constant="106" id="pjl-a8-EJF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Checkout">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YsI-vd-QfZ" kind="show" identifier="checkOut" id="qgd-pr-4E4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KfI-z3-xqw">
+                                <rect key="frame" x="368" y="504" width="80" height="33"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Clear Cart"/>
+                                <connections>
+                                    <action selector="clearCartPressed:" destination="Lqr-u7-5f9" eventType="touchUpInside" id="ayx-si-LII"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="KfI-z3-xqw" firstAttribute="leading" secondItem="B1j-41-h7n" secondAttribute="trailing" constant="78" id="15A-X3-hJN"/>
-                            <constraint firstAttribute="bottom" secondItem="B1j-41-h7n" secondAttribute="bottom" constant="20" symbolic="YES" id="8hQ-YQ-xlW"/>
-                            <constraint firstItem="B1j-41-h7n" firstAttribute="leading" secondItem="bwg-aA-63g" secondAttribute="leading" id="FgO-gi-Emi"/>
+                            <constraint firstItem="KfI-z3-xqw" firstAttribute="top" secondItem="nNc-br-T4g" secondAttribute="bottom" constant="2" id="3Ee-gx-9NZ"/>
+                            <constraint firstItem="B1j-41-h7n" firstAttribute="leading" secondItem="nNc-br-T4g" secondAttribute="leading" constant="16" id="65o-WX-Eky"/>
+                            <constraint firstItem="1ES-G5-pTS" firstAttribute="leading" secondItem="KfI-z3-xqw" secondAttribute="trailing" constant="21" id="BgG-y4-TPW"/>
+                            <constraint firstItem="YUG-Nr-Lqf" firstAttribute="top" secondItem="B1j-41-h7n" secondAttribute="top" constant="1" id="D3K-r6-WMo"/>
+                            <constraint firstItem="GVn-3M-Oce" firstAttribute="top" secondItem="KfI-z3-xqw" secondAttribute="bottom" constant="63" id="DJF-IY-iWP"/>
                             <constraint firstItem="qCd-zT-I1g" firstAttribute="top" secondItem="h2r-cV-xYk" secondAttribute="bottom" id="GyY-bz-0MD"/>
-                            <constraint firstItem="B1j-41-h7n" firstAttribute="leading" secondItem="nNc-br-T4g" secondAttribute="leading" id="HFJ-2Q-XCf"/>
-                            <constraint firstItem="YUG-Nr-Lqf" firstAttribute="trailing" secondItem="bwg-aA-63g" secondAttribute="trailingMargin" id="HQv-0f-iy1"/>
                             <constraint firstAttribute="trailing" secondItem="qCd-zT-I1g" secondAttribute="trailing" id="INg-1U-RFF"/>
-                            <constraint firstItem="KfI-z3-xqw" firstAttribute="top" secondItem="nNc-br-T4g" secondAttribute="bottom" constant="39" id="MsJ-0Y-80J"/>
-                            <constraint firstItem="B1j-41-h7n" firstAttribute="top" secondItem="nNc-br-T4g" secondAttribute="bottom" constant="29" id="Qhe-LH-Ucn"/>
+                            <constraint firstItem="1ES-G5-pTS" firstAttribute="top" secondItem="nNc-br-T4g" secondAttribute="bottom" constant="8" id="LUH-ts-PW5"/>
+                            <constraint firstItem="YUG-Nr-Lqf" firstAttribute="trailing" secondItem="bwg-aA-63g" secondAttribute="trailingMargin" constant="10" id="PCt-aW-Iyd"/>
                             <constraint firstItem="qCd-zT-I1g" firstAttribute="leading" secondItem="nNc-br-T4g" secondAttribute="leading" id="SfE-5O-Vsv"/>
-                            <constraint firstItem="GVn-3M-Oce" firstAttribute="top" secondItem="YUG-Nr-Lqf" secondAttribute="bottom" constant="19" id="YtL-lk-XyP"/>
+                            <constraint firstItem="B1j-41-h7n" firstAttribute="top" secondItem="nNc-br-T4g" secondAttribute="bottom" constant="54" id="crU-wc-wZS"/>
                             <constraint firstItem="nNc-br-T4g" firstAttribute="top" secondItem="qCd-zT-I1g" secondAttribute="bottom" id="eBk-q3-WHJ"/>
-                            <constraint firstItem="YUG-Nr-Lqf" firstAttribute="top" secondItem="nNc-br-T4g" secondAttribute="bottom" constant="32" id="fOT-5U-xxL"/>
+                            <constraint firstItem="B1j-41-h7n" firstAttribute="leading" secondItem="bwg-aA-63g" secondAttribute="leading" constant="16" id="f3G-Ht-Ia2"/>
                             <constraint firstItem="GVn-3M-Oce" firstAttribute="top" secondItem="1ES-G5-pTS" secondAttribute="bottom" constant="69" id="gL4-48-t0z"/>
                             <constraint firstItem="qCd-zT-I1g" firstAttribute="trailing" secondItem="nNc-br-T4g" secondAttribute="trailing" id="hzP-x0-sbQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1ES-G5-pTS" secondAttribute="trailing" constant="78" id="j0j-q4-k6c"/>
-                            <constraint firstItem="KfI-z3-xqw" firstAttribute="centerX" secondItem="nNc-br-T4g" secondAttribute="centerX" id="num-MJ-eHN"/>
-                            <constraint firstItem="GVn-3M-Oce" firstAttribute="top" secondItem="KfI-z3-xqw" secondAttribute="bottom" constant="24" id="zNK-3z-fk2"/>
+                            <constraint firstItem="GVn-3M-Oce" firstAttribute="top" secondItem="YUG-Nr-Lqf" secondAttribute="bottom" constant="9" id="rO6-K9-T0d"/>
+                            <constraint firstItem="GVn-3M-Oce" firstAttribute="top" secondItem="B1j-41-h7n" secondAttribute="bottom" constant="8" id="xdn-If-h62"/>
                         </constraints>
                     </view>
                     <connections>
@@ -296,6 +300,7 @@
         <image name="scanbutton2" width="270" height="270"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Fux-cS-Ih6"/>
+        <segue reference="gF2-Qc-k0Z"/>
+        <segue reference="jOW-iC-ujo"/>
     </inferredMetricsTieBreakers>
 </document>

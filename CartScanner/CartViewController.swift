@@ -26,6 +26,8 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var theCart = [NSManagedObject]()
     var newProduct = Product()
+    
+    var fromViewCartButton = false
 
     @IBOutlet weak var totalLabel: UILabel!
     
@@ -75,16 +77,25 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(cartTableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
+        
+        
         var cell:itemCell = cartTableView.dequeueReusableCellWithIdentifier("cell") as itemCell
         let item = theCart[indexPath.row]
         var price: Double = 0.0
-
-        cell.itemName.text = item.valueForKey("name") as String?
-        price = item.valueForKey("price") as Double!
-        cell.itemPrice.text = "$\(price)"
-        var imageName = item.valueForKey("image") as String?
-        cell.itemImage.image = UIImage(named: imageName!)
-            //cell.itemPrice.text =item.valueForKey("price") as Double?
+        
+        if theCart.count == 0{
+            cell.itemName.text = ""
+            cell.itemPrice.text = ""
+        }
+        
+        if theCart.count > 0{
+            cell.itemName.text = item.valueForKey("name") as String?
+            price = item.valueForKey("price") as Double!
+            cell.itemPrice.text = "$\(price)"
+            var imageName = item.valueForKey("image") as String?
+            cell.itemImage.image = UIImage(named: imageName!)
+                //cell.itemPrice.text =item.valueForKey("price") as Double?
+        }
         return cell
         
     }
@@ -145,7 +156,9 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         // Register custom cell:
         var nib = UINib(nibName: "itemTableCell", bundle: nil)
         cartTableView.registerNib(nib, forCellReuseIdentifier: "cell")
-        self.saveItem(newProduct)
+        if !fromViewCartButton{
+            self.saveItem(newProduct)
+        }
 
         
         let appDel = UIApplication.sharedApplication().delegate as AppDelegate
