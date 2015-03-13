@@ -1,21 +1,19 @@
 //
-//  LandingViewController.swift
+//  ItemNotFoundViewController.swift
 //  CartScanner
 //
-//  Created by Kenny Pham on 2/17/15.
+//  Created by Kenny Pham on 3/12/15.
 //  Copyright (c) 2015 InfinitePeripherals. All rights reserved.
 //
 
 import UIKit
 
-class LandingViewController: UIViewController {
+class ItemNotFoundViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = UIColor(patternImage: UIImage(named: "bg2.png")!)
 
-        
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

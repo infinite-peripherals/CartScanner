@@ -2,8 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "camera.jpg"
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
