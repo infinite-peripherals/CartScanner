@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CartScanner/ScannerViewController.swift"
-            timestampString = "447926462.748425"
+            timestampString = "447929067.092788"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "captureOutput(_:didOutputMetadataObjects:fromConnection:)"
             landmarkType = "5">
          </BreakpointContent>

@@ -17,10 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayJ-jP-2Tb">
-                                <rect key="frame" x="165" y="165" width="270" height="270"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Start Scanning " backgroundImage="scanbutton2">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayJ-jP-2Tb">
+                                <rect key="frame" x="210" y="210" width="180" height="180"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="29"/>
+                                <state key="normal" title="Start Scanning" backgroundImage="landingCircle">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -350,10 +350,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="scanbutton2" width="270" height="270"/>
+        <image name="landingCircle" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aO7-Dx-ZZ0"/>
+        <segue reference="Fux-cS-Ih6"/>
         <segue reference="gF2-Qc-k0Z"/>
     </inferredMetricsTieBreakers>
 </document>
