@@ -25,6 +25,7 @@ class AddToCartViewController: UIViewController{
     var productDatabase = [Product(name: "Water bottle", quantity: 1, UPC: "123456789", price: 2.49, imageReference: "water-bottle"), Product(name: "Camera", quantity: 1, UPC: "987654321", price: 199.99, imageReference: "camera")]
     
     
+    @IBOutlet weak var nameOfItem: UILabel!
     @IBOutlet weak var scannedUPC: UILabel!
 
     
@@ -40,8 +41,8 @@ class AddToCartViewController: UIViewController{
         theProduct = searchDatabase(scannerBarcode!, database: productDatabase)
         var image : UIImage = UIImage(named:theProduct.imageReference)!
         productImage.image = image
-        scannedUPC.text = "UPC: \(scannerBarcode!) is \(theProduct.name)"
-        
+        scannedUPC.text = "UPC test: \(scannerBarcode!) is \(theProduct.name)"
+        nameOfItem.text = "\(theProduct.name)"
         
         
         // Do any additional setup after loading the view.
