@@ -74,22 +74,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The UPC code is not found in the database" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPx-3z-AzL">
+                                <rect key="frame" x="157" y="243" width="308" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRc-fh-K8s">
-                                <rect key="frame" x="213" y="380" width="175" height="40"/>
+                                <rect key="frame" x="222" y="488" width="156" height="40"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
-                                <state key="normal" title="Scan another item">
+                                <state key="normal" title="Scan Other Item">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="oIM-tg-dzG" kind="show" id="aO7-Dx-ZZ0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The UPC Code is not found in the database" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPx-3z-AzL">
-                                <rect key="frame" x="157" y="243" width="311" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -123,18 +123,12 @@
                                     <segue destination="Lqr-u7-5f9" kind="presentation" identifier="addToCart" id="Boi-Ik-fpy"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="af0-9V-b4r">
-                                <rect key="frame" x="221" y="419" width="159" height="29"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ihY-jQ-HZa">
-                                <rect key="frame" x="200" y="137" width="200" height="200"/>
+                                <rect key="frame" x="200" y="147" width="200" height="200"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQ5-B9-64E">
-                                <rect key="frame" x="273" y="65" width="54" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
+                                <rect key="frame" x="267" y="65" width="64" height="31"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -151,23 +145,30 @@
                                     <segue destination="oIM-tg-dzG" kind="presentation" id="Xcu-PJ-o7T"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="af0-9V-b4r">
+                                <rect key="frame" x="264" y="410" width="72" height="29"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ihY-jQ-HZa" firstAttribute="top" secondItem="hQ5-B9-64E" secondAttribute="bottom" constant="51" id="5zy-J5-M8j"/>
                             <constraint firstAttribute="trailingMargin" secondItem="F83-z5-61v" secondAttribute="trailing" constant="31" id="BY3-FJ-RCj"/>
                             <constraint firstItem="jTG-Db-kCf" firstAttribute="leading" secondItem="Mk3-Jr-CFf" secondAttribute="leadingMargin" constant="31" id="G1E-UB-aYY"/>
-                            <constraint firstAttribute="centerY" secondItem="ihY-jQ-HZa" secondAttribute="centerY" constant="63" id="Mt8-Ng-GMj"/>
-                            <constraint firstAttribute="centerX" secondItem="hQ5-B9-64E" secondAttribute="centerX" id="Mth-YM-9hf"/>
+                            <constraint firstAttribute="centerY" secondItem="ihY-jQ-HZa" secondAttribute="centerY" constant="53" id="Mt8-Ng-GMj"/>
+                            <constraint firstAttribute="centerX" secondItem="hQ5-B9-64E" secondAttribute="centerX" constant="1" id="Mth-YM-9hf"/>
                             <constraint firstAttribute="centerX" secondItem="af0-9V-b4r" secondAttribute="centerX" constant="-0.5" id="UrR-sl-ZcC"/>
                             <constraint firstItem="Qdx-7T-1fQ" firstAttribute="top" secondItem="jTG-Db-kCf" secondAttribute="bottom" constant="35" id="V34-9b-0Ih"/>
                             <constraint firstItem="hQ5-B9-64E" firstAttribute="top" secondItem="i0L-3L-01V" secondAttribute="bottom" constant="45" id="XOC-9C-SMM"/>
-                            <constraint firstAttribute="centerY" secondItem="af0-9V-b4r" secondAttribute="centerY" constant="-133.5" id="ZX4-JK-fwL"/>
+                            <constraint firstAttribute="centerY" secondItem="af0-9V-b4r" secondAttribute="centerY" constant="-124.5" id="ZX4-JK-fwL"/>
                             <constraint firstItem="Qdx-7T-1fQ" firstAttribute="top" secondItem="F83-z5-61v" secondAttribute="bottom" constant="35" id="bn4-2M-lKd"/>
                             <constraint firstAttribute="centerX" secondItem="ihY-jQ-HZa" secondAttribute="centerX" id="w9g-Ge-N1z"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="itemName" destination="hQ5-B9-64E" id="OB1-63-jUy"/>
                         <outlet property="productImage" destination="ihY-jQ-HZa" id="DHb-TQ-q15"/>
                         <outlet property="scannedUPC" destination="af0-9V-b4r" id="CXM-ig-LaH"/>
                         <segue destination="pBn-2W-gN5" kind="show" identifier="itemNotFound" id="BL5-nt-771"/>
@@ -208,9 +209,8 @@
                             </tableView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qCd-zT-I1g">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.91155342565984454" green="0.93377612803299215" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="Your Cart" id="cKB-dZ-8rA"/>
@@ -221,7 +221,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="GDB-C2-6yb"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Back">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -229,19 +229,19 @@
                                     <segue destination="oIM-tg-dzG" kind="presentation" identifier="backToScan" id="jOW-iC-ujo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ES-G5-pTS">
-                                <rect key="frame" x="417" y="498" width="37" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ES-G5-pTS">
+                                <rect key="frame" x="417" y="498" width="73.5" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUG-Nr-Lqf">
-                                <rect key="frame" x="478" y="546" width="106" height="34"/>
+                                <rect key="frame" x="494" y="546" width="106" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="lc6-Wq-onM"/>
                                     <constraint firstAttribute="width" constant="106" id="pjl-a8-EJF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Checkout">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -250,8 +250,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KfI-z3-xqw">
-                                <rect key="frame" x="254" y="548" width="80" height="33"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <rect key="frame" x="254" y="545" width="85" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Clear Cart"/>
                                 <connections>
                                     <action selector="clearCartPressed:" destination="Lqr-u7-5f9" eventType="touchUpInside" id="ayx-si-LII"/>
@@ -260,22 +260,21 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="KfI-z3-xqw" firstAttribute="top" secondItem="nNc-br-T4g" secondAttribute="bottom" constant="72" id="3Ee-gx-9NZ"/>
                             <constraint firstItem="B1j-41-h7n" firstAttribute="leading" secondItem="nNc-br-T4g" secondAttribute="leading" constant="16" id="65o-WX-Eky"/>
-                            <constraint firstItem="1ES-G5-pTS" firstAttribute="leading" secondItem="KfI-z3-xqw" secondAttribute="trailing" constant="83" id="BgG-y4-TPW"/>
+                            <constraint firstAttribute="centerX" secondItem="KfI-z3-xqw" secondAttribute="centerX" constant="3.5" id="APY-Pq-8mg"/>
                             <constraint firstItem="YUG-Nr-Lqf" firstAttribute="top" secondItem="B1j-41-h7n" secondAttribute="top" constant="2" id="D3K-r6-WMo"/>
-                            <constraint firstItem="GVn-3M-Oce" firstAttribute="top" secondItem="KfI-z3-xqw" secondAttribute="bottom" constant="19" id="DJF-IY-iWP"/>
                             <constraint firstItem="qCd-zT-I1g" firstAttribute="top" secondItem="h2r-cV-xYk" secondAttribute="bottom" id="GyY-bz-0MD"/>
                             <constraint firstAttribute="trailing" secondItem="qCd-zT-I1g" secondAttribute="trailing" id="INg-1U-RFF"/>
                             <constraint firstItem="1ES-G5-pTS" firstAttribute="top" secondItem="nNc-br-T4g" secondAttribute="bottom" constant="22" id="LUH-ts-PW5"/>
-                            <constraint firstItem="YUG-Nr-Lqf" firstAttribute="trailing" secondItem="bwg-aA-63g" secondAttribute="trailingMargin" id="PCt-aW-Iyd"/>
+                            <constraint firstItem="YUG-Nr-Lqf" firstAttribute="trailing" secondItem="bwg-aA-63g" secondAttribute="trailingMargin" constant="16" id="PCt-aW-Iyd"/>
                             <constraint firstItem="qCd-zT-I1g" firstAttribute="leading" secondItem="nNc-br-T4g" secondAttribute="leading" id="SfE-5O-Vsv"/>
                             <constraint firstItem="B1j-41-h7n" firstAttribute="top" secondItem="nNc-br-T4g" secondAttribute="bottom" constant="68" id="crU-wc-wZS"/>
+                            <constraint firstItem="GVn-3M-Oce" firstAttribute="top" secondItem="KfI-z3-xqw" secondAttribute="bottom" constant="19" id="cv8-AX-ElB"/>
                             <constraint firstItem="nNc-br-T4g" firstAttribute="top" secondItem="qCd-zT-I1g" secondAttribute="bottom" id="eBk-q3-WHJ"/>
                             <constraint firstItem="B1j-41-h7n" firstAttribute="leading" secondItem="bwg-aA-63g" secondAttribute="leading" constant="16" id="f3G-Ht-Ia2"/>
                             <constraint firstItem="GVn-3M-Oce" firstAttribute="top" secondItem="1ES-G5-pTS" secondAttribute="bottom" constant="81" id="gL4-48-t0z"/>
                             <constraint firstItem="qCd-zT-I1g" firstAttribute="trailing" secondItem="nNc-br-T4g" secondAttribute="trailing" id="hzP-x0-sbQ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1ES-G5-pTS" secondAttribute="trailing" constant="130" id="j0j-q4-k6c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1ES-G5-pTS" secondAttribute="trailing" constant="93.5" id="j0j-q4-k6c"/>
                             <constraint firstItem="GVn-3M-Oce" firstAttribute="top" secondItem="YUG-Nr-Lqf" secondAttribute="bottom" constant="20" id="rO6-K9-T0d"/>
                             <constraint firstItem="GVn-3M-Oce" firstAttribute="top" secondItem="B1j-41-h7n" secondAttribute="bottom" constant="20" id="xdn-If-h62"/>
                         </constraints>
@@ -301,28 +300,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zA7-l5-KoC">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <items>
-                                    <navigationItem title="QR Code" id="MuV-YQ-7uD">
-                                        <barButtonItem key="backBarButtonItem" image="QRCode" id="iCa-j3-sFO"/>
-                                    </navigationItem>
-                                </items>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                </variation>
-                            </navigationBar>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3pS-E6-ucc">
+                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3pS-E6-ucc">
                                 <rect key="frame" x="150" y="201" width="300" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="316" id="NS0-5c-JHv"/>
+                                    <constraint firstAttribute="width" constant="300" id="NS0-5c-JHv"/>
                                 </constraints>
                                 <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="11" y="128" width="316" height="318"/>
                                 </variation>
                             </webView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHq-uR-Mib">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHq-uR-Mib">
                                 <rect key="frame" x="275" y="525" width="50" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Finish">
@@ -336,7 +324,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please scan this QR code at the nearest Kiosk" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0d-cs-DUA">
-                                <rect key="frame" x="123" y="115" width="355" height="53"/>
+                                <rect key="frame" x="123" y="58" width="355" height="53"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -344,14 +332,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3pS-E6-ucc" firstAttribute="leading" secondItem="foF-Cd-cMJ" secondAttribute="leadingMargin" constant="-5" id="7R5-eW-VpN"/>
-                            <constraint firstItem="zA7-l5-KoC" firstAttribute="top" secondItem="2Fq-4G-zv3" secondAttribute="bottom" id="Fx4-eh-rjv"/>
-                            <constraint firstAttribute="trailing" secondItem="zA7-l5-KoC" secondAttribute="trailing" id="GqP-Bk-iZP"/>
-                            <constraint firstItem="3pS-E6-ucc" firstAttribute="top" secondItem="zA7-l5-KoC" secondAttribute="bottom" constant="64" id="MD6-si-Lfl"/>
-                            <constraint firstItem="CL6-62-gIO" firstAttribute="top" secondItem="tHq-uR-Mib" secondAttribute="bottom" constant="45" id="Wo4-oi-I6p"/>
-                            <constraint firstItem="tHq-uR-Mib" firstAttribute="leading" secondItem="foF-Cd-cMJ" secondAttribute="leadingMargin" constant="116" id="fPb-7W-Z2G"/>
-                            <constraint firstItem="tHq-uR-Mib" firstAttribute="top" secondItem="3pS-E6-ucc" secondAttribute="bottom" constant="74" id="mQV-OA-j2l"/>
-                            <constraint firstItem="zA7-l5-KoC" firstAttribute="leading" secondItem="foF-Cd-cMJ" secondAttribute="leading" id="w0d-kt-LG1"/>
+                            <constraint firstItem="3pS-E6-ucc" firstAttribute="leading" secondItem="foF-Cd-cMJ" secondAttribute="leadingMargin" constant="134" id="7R5-eW-VpN"/>
+                            <constraint firstItem="CL6-62-gIO" firstAttribute="top" secondItem="tHq-uR-Mib" secondAttribute="bottom" constant="40" id="Wo4-oi-I6p"/>
+                            <constraint firstItem="tHq-uR-Mib" firstAttribute="leading" secondItem="foF-Cd-cMJ" secondAttribute="leadingMargin" constant="259" id="fPb-7W-Z2G"/>
+                            <constraint firstItem="tHq-uR-Mib" firstAttribute="top" secondItem="3pS-E6-ucc" secondAttribute="bottom" constant="24" id="mQV-OA-j2l"/>
                         </constraints>
                     </view>
                     <connections>
@@ -364,11 +348,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="QRCode" width="248" height="248"/>
         <image name="scanbutton2" width="270" height="270"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aO7-Dx-ZZ0"/>
+        <segue reference="jOW-iC-ujo"/>
         <segue reference="Boi-Ik-fpy"/>
     </inferredMetricsTieBreakers>
 </document>

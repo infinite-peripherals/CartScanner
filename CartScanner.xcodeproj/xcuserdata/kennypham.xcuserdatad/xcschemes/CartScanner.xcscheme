@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6AF668921A93F8C500395488"
-               BuildableName = "CartScanner.app"
+               BuildableName = "Infinite Pay.app"
                BlueprintName = "CartScanner"
                ReferencedContainer = "container:CartScanner.xcodeproj">
             </BuildableReference>
@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6AF668A71A93F8C500395488"
-               BuildableName = "CartScannerTests.xctest"
+               BuildableName = "Infinite PayTests.xctest"
                BlueprintName = "CartScannerTests"
                ReferencedContainer = "container:CartScanner.xcodeproj">
             </BuildableReference>
@@ -47,7 +47,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6AF668A71A93F8C500395488"
-               BuildableName = "CartScannerTests.xctest"
+               BuildableName = "Infinite PayTests.xctest"
                BlueprintName = "CartScannerTests"
                ReferencedContainer = "container:CartScanner.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6AF668921A93F8C500395488"
-            BuildableName = "CartScanner.app"
+            BuildableName = "Infinite Pay.app"
             BlueprintName = "CartScanner"
             ReferencedContainer = "container:CartScanner.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6AF668921A93F8C500395488"
-            BuildableName = "CartScanner.app"
+            BuildableName = "Infinite Pay.app"
             BlueprintName = "CartScanner"
             ReferencedContainer = "container:CartScanner.xcodeproj">
          </BuildableReference>
@@ -94,7 +94,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6AF668921A93F8C500395488"
-            BuildableName = "CartScanner.app"
+            BuildableName = "Infinite Pay.app"
             BlueprintName = "CartScanner"
             ReferencedContainer = "container:CartScanner.xcodeproj">
          </BuildableReference>

@@ -20,6 +20,7 @@ protocol cartEditDelegate{
 class CartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
 
+
     @IBOutlet weak var cartTableView: UITableView!
     
     var cartList: Array<AnyObject> = []
@@ -124,7 +125,18 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
                 totalPrice += cartList[i].valueForKey("price") as Double!
             }
             
-            self.totalLabel.text = "Total: $\(totalPrice)"
+            
+            
+            if theCart.count == 0{
+                self.totalLabel.text = "Total: $0.00"
+            }
+            
+            if theCart.count > 0{
+                self.totalLabel.text = "Total: $\(totalPrice)"
+            }
+
+            
+            //self.totalLabel.text = "Total: $\(totalPrice)"
      
             var error: NSError? = nil
             if !context.save(&error){
@@ -174,7 +186,15 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
             totalPrice += cartList[i].valueForKey("price") as Double!
         }
         
-        self.totalLabel.text = "Total: $\(totalPrice)"
+        if theCart.count == 0{
+            self.totalLabel.text = "Total: $0.00"
+        }
+        
+        if theCart.count > 0{
+            self.totalLabel.text = "Total: $\(totalPrice)"
+        }
+        
+        //self.totalLabel.text = "Total: $\(totalPrice)"
 
         self.cartTableView.separatorStyle = UITableViewCellSeparatorStyle.None;
         //self.cartTableView.editing = true;
