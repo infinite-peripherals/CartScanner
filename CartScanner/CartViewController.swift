@@ -186,11 +186,11 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
             totalPrice += cartList[i].valueForKey("price") as Double!
         }
         
-        if theCart.count == 0{
+        if cartList.count == 0{
             self.totalLabel.text = "Total: $0.00"
         }
         
-        if theCart.count > 0{
+        if cartList.count > 0{
             self.totalLabel.text = "Total: $\(totalPrice)"
         }
         

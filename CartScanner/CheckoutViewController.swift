@@ -37,7 +37,7 @@ class CheckoutViewController: UIViewController {
         
         println(urlString)
         
-        let url = NSURL (string: "http://api.qrserver.com/v1/create-qr-code/?data=\(urlString)&size=280x280");
+        let url = NSURL (string: "http://api.qrserver.com/v1/create-qr-code/?data=\(urlString)&size=250x250");
         let requestObj = NSURLRequest(URL: url!);
         webView.loadRequest(requestObj);
     }

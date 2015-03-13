@@ -56,6 +56,7 @@
                     <connections>
                         <segue destination="wbY-7h-g9J" kind="presentation" identifier="scanned" id="zys-LI-mHK"/>
                         <segue destination="Lqr-u7-5f9" kind="presentation" identifier="viewTheCart" id="gF2-Qc-k0Z"/>
+                        <segue destination="pBn-2W-gN5" kind="presentation" identifier="itemNotFound" id="SAw-HE-L9w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p27-vl-6gi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -74,14 +75,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The UPC code is not found in the database" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPx-3z-AzL">
-                                <rect key="frame" x="157" y="243" width="308" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRc-fh-K8s">
-                                <rect key="frame" x="222" y="488" width="156" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRc-fh-K8s">
+                                <rect key="frame" x="222" y="491" width="156" height="40"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
                                 <state key="normal" title="Scan Other Item">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -90,13 +85,25 @@
                                     <segue destination="oIM-tg-dzG" kind="show" id="aO7-Dx-ZZ0"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The item is not found in the database" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPx-3z-AzL">
+                                <rect key="frame" x="146" y="243" width="309" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CRc-fh-K8s" firstAttribute="top" secondItem="gPx-3z-AzL" secondAttribute="bottom" constant="224" id="60c-sy-NYY"/>
+                            <constraint firstAttribute="centerX" secondItem="gPx-3z-AzL" secondAttribute="centerX" id="GjK-7K-DjJ"/>
+                            <constraint firstAttribute="centerX" secondItem="CRc-fh-K8s" secondAttribute="centerX" id="loz-K1-mOx"/>
+                            <constraint firstItem="gPx-3z-AzL" firstAttribute="top" secondItem="uue-pg-3sN" secondAttribute="bottom" constant="223" id="ocJ-By-MXI"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3zw-pS-bje" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="995" y="1239"/>
+            <point key="canvasLocation" x="1704" y="1319"/>
         </scene>
         <!--Add To Cart View Controller-->
         <scene sceneID="t1B-ih-KdF">
@@ -110,9 +117,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F83-z5-61v">
-                                <rect key="frame" x="456" y="531" width="97" height="34"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F83-z5-61v">
+                                <rect key="frame" x="453" y="529" width="100" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Add To Cart">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -123,7 +130,7 @@
                                     <segue destination="Lqr-u7-5f9" kind="presentation" identifier="addToCart" id="Boi-Ik-fpy"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ihY-jQ-HZa">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ihY-jQ-HZa" colorLabel="IBBuiltInLabel-Blue">
                                 <rect key="frame" x="200" y="147" width="200" height="200"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQ5-B9-64E">
@@ -132,9 +139,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTG-Db-kCf">
-                                <rect key="frame" x="47" y="509" width="56" height="56"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="af0-9V-b4r">
+                                <rect key="frame" x="264" y="410" width="72" height="29"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTG-Db-kCf">
+                                <rect key="frame" x="47" y="529" width="59" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Cancel">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -145,12 +158,6 @@
                                     <segue destination="oIM-tg-dzG" kind="presentation" id="Xcu-PJ-o7T"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="af0-9V-b4r">
-                                <rect key="frame" x="264" y="410" width="72" height="29"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -171,7 +178,6 @@
                         <outlet property="itemName" destination="hQ5-B9-64E" id="OB1-63-jUy"/>
                         <outlet property="productImage" destination="ihY-jQ-HZa" id="DHb-TQ-q15"/>
                         <outlet property="scannedUPC" destination="af0-9V-b4r" id="CXM-ig-LaH"/>
-                        <segue destination="pBn-2W-gN5" kind="show" identifier="itemNotFound" id="BL5-nt-771"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xwh-s5-7Ij" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -300,22 +306,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3pS-E6-ucc">
-                                <rect key="frame" x="150" y="201" width="300" height="300"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="NS0-5c-JHv"/>
-                                </constraints>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="11" y="128" width="316" height="318"/>
-                                </variation>
-                            </webView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHq-uR-Mib">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHq-uR-Mib">
                                 <rect key="frame" x="275" y="525" width="50" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <state key="normal" title="Finish">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <state key="normal" title="Finish"/>
                                 <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
                                     <rect key="frame" x="132" y="520" width="50" height="35"/>
                                 </variation>
@@ -323,19 +316,28 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="Mzg-aE-FbM"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please scan this QR code at the nearest Kiosk" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0d-cs-DUA">
-                                <rect key="frame" x="123" y="58" width="355" height="53"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take this QR code to a Kiosk" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0d-cs-DUA">
+                                <rect key="frame" x="185" y="48" width="229" height="22.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="19"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3pS-E6-ucc">
+                                <rect key="frame" x="175" y="175" width="250" height="250"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="11" y="128" width="316" height="318"/>
+                                </variation>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3pS-E6-ucc" firstAttribute="leading" secondItem="foF-Cd-cMJ" secondAttribute="leadingMargin" constant="134" id="7R5-eW-VpN"/>
+                            <constraint firstAttribute="centerX" secondItem="R0d-cs-DUA" secondAttribute="centerX" id="01N-67-Hel"/>
+                            <constraint firstItem="R0d-cs-DUA" firstAttribute="top" secondItem="2Fq-4G-zv3" secondAttribute="bottom" constant="28" id="66v-iH-1X9"/>
                             <constraint firstItem="CL6-62-gIO" firstAttribute="top" secondItem="tHq-uR-Mib" secondAttribute="bottom" constant="40" id="Wo4-oi-I6p"/>
-                            <constraint firstItem="tHq-uR-Mib" firstAttribute="leading" secondItem="foF-Cd-cMJ" secondAttribute="leadingMargin" constant="259" id="fPb-7W-Z2G"/>
-                            <constraint firstItem="tHq-uR-Mib" firstAttribute="top" secondItem="3pS-E6-ucc" secondAttribute="bottom" constant="24" id="mQV-OA-j2l"/>
+                            <constraint firstAttribute="centerY" secondItem="3pS-E6-ucc" secondAttribute="centerY" id="gbJ-dm-45y"/>
+                            <constraint firstAttribute="centerX" secondItem="tHq-uR-Mib" secondAttribute="centerX" id="liZ-KG-qv8"/>
+                            <constraint firstAttribute="centerX" secondItem="3pS-E6-ucc" secondAttribute="centerX" id="xUr-gb-2PS"/>
                         </constraints>
                     </view>
                     <connections>
@@ -351,7 +353,7 @@
         <image name="scanbutton2" width="270" height="270"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jOW-iC-ujo"/>
-        <segue reference="Boi-Ik-fpy"/>
+        <segue reference="aO7-Dx-ZZ0"/>
+        <segue reference="gF2-Qc-k0Z"/>
     </inferredMetricsTieBreakers>
 </document>

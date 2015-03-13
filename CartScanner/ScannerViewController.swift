@@ -18,6 +18,9 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     var boxView:UIView!;
     
     var scannedString: String?
+    var scannedProduct = Product()
+    
+    var productDatabase = [Product(name: "Water Bottle", quantity: 1, UPC: "123456789", price: 2.49, imageReference: "water-bottle"), Product(name: "Camera", quantity: 1, UPC: "987654321", price: 199.99, imageReference: "camera")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,8 +35,10 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         self.highlightView.layer.borderColor = UIColor.greenColor().CGColor
         self.highlightView.layer.borderWidth = 3
         
+        
         // Add it to our controller's view as a subview.
         self.view.addSubview(self.highlightView)
+        
         
         
         // For the sake of discussion this is the camera
@@ -135,7 +140,17 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         self.view.bringSubviewToFront(self.highlightView)
         
         if detected == true{
-            self.performSegueWithIdentifier("scanned", sender: self)
+            if checkItem(self.scannedString!, database: productDatabase) == true{
+                self.scannedProduct = searchDatabase(self.scannedString!, database: productDatabase)
+                self.performSegueWithIdentifier("scanned", sender: self)
+            }
+            
+            if checkItem(self.scannedString!, database: productDatabase) == false{
+                self.performSegueWithIdentifier("itemNotFound", sender: self)
+            }
+            
+            
+            
         
         //let viewController: AddToCartViewController = self.storyboard?.instantiateViewControllerWithIdentifier("AddToCart") as AddToCartViewController
         //self.presentViewController(viewController, animated: true, completion: nil)
@@ -151,6 +166,30 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         
     }
     
+    
+    func checkItem(searchBarcode: String, database: Array<Product>) -> Bool{
+        var foundItem = false
+        
+        for (var i=0; i<database.count; i++){
+            if searchBarcode == database[i].UPC{
+                foundItem = true
+            }
+        }
+        
+        return foundItem
+        
+    }
+    func searchDatabase(searchBarcode: String, database: Array<Product>) -> Product{
+        var toReturn = Product()
+        
+        for (var i=0; i<database.count; i++){
+            if searchBarcode == database[i].UPC{
+                toReturn = database[i]
+            }
+        }
+        return toReturn
+        
+    }
 
     
     // MARK: - Navigation
@@ -164,7 +203,12 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         
         if segue.identifier == "scanned" {
             var itemToAdd = segue.destinationViewController as AddToCartViewController
-            itemToAdd.scannerBarcode = self.scannedString!
+            //itemToAdd.scannerBarcode = self.scannedString!
+            itemToAdd.theProduct = self.scannedProduct
+        }
+        if segue.identifier == "itemNotFound" {
+            var itemToAdd = segue.destinationViewController as ItemNotFoundViewController
+
         }
         
         

@@ -10,6 +10,8 @@ import UIKit
 
 class ItemNotFoundViewController: UIViewController {
 
+    
+    var testString = true
     override func viewDidLoad() {
         super.viewDidLoad()
 
