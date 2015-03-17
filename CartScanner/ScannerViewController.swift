@@ -76,7 +76,7 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         
         self.boxView = UIView(frame: self.view.frame);
         myButton.frame = CGRectMake(0,0,200,40)
-        myButton.backgroundColor = UIColor(red: 0.0, green: 0.5, blue: 0.0, alpha: 1.0)
+        myButton.backgroundColor = UIColor(red: 144/255, green: 192/255, blue: 181/255, alpha: 1.0)
         myButton.layer.masksToBounds = true
         myButton.setTitle("View Cart", forState: UIControlState.Normal)
         myButton.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
