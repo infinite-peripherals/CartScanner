@@ -17,8 +17,6 @@ class Product{
     var price:Double
     var imageReference:String
     
-    
-    
     init(){
         self.name = ""
         self.quantity = 0
@@ -33,15 +31,6 @@ class Product{
         self.UPC = UPC
         self.price = price
         self.imageReference = imageReference
-    }
-    
-    
-    func createProduct(name: String, quantity: Int, UPC: String, price: Double){
-        self.name = name
-        self.quantity = quantity
-        self.UPC = UPC
-        self.price = price
-        
     }
     
     

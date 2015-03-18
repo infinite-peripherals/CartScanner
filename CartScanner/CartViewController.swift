@@ -5,17 +5,11 @@
 //  Created by Kenny Pham on 2/17/15.
 //  Copyright (c) 2015 InfinitePeripherals. All rights reserved.
 //
-//  test HQ 
-// more tests Kenny
 
 import UIKit
 import Foundation
 import CoreData
 
-protocol cartEditDelegate{
-    func editCartDidFinish(controller: CartViewController,cart: ShoppingCart)
-    
-}
 
 class CartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
@@ -31,8 +25,6 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
     var fromViewCartButton = false
 
     @IBOutlet weak var totalLabel: UILabel!
-    
-    var delegate:cartEditDelegate? = nil
     
     
     @IBAction func clearCartPressed(sender: UIButton) {
