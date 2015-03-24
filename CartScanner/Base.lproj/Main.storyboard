@@ -61,7 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p27-vl-6gi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1009.9999999999999" y="366"/>
+            <point key="canvasLocation" x="979" y="364"/>
         </scene>
         <!--Item Not Found View Controller-->
         <scene sceneID="OgL-Mn-rNp">
@@ -75,22 +75,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRc-fh-K8s">
-                                <rect key="frame" x="222" y="491" width="156" height="40"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
-                                <state key="normal" title="Scan Other Item">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="oIM-tg-dzG" kind="show" id="aO7-Dx-ZZ0"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The item is not found in the database" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPx-3z-AzL">
                                 <rect key="frame" x="146" y="243" width="309" height="24"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRc-fh-K8s">
+                                <rect key="frame" x="215" y="491" width="170" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.35610524919999997" blue="0.75061158459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="23"/>
+                                <state key="normal" title="Scan Other Item">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oIM-tg-dzG" kind="show" id="aO7-Dx-ZZ0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -117,10 +119,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F83-z5-61v">
-                                <rect key="frame" x="453" y="529" width="100" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F83-z5-61v">
+                                <rect key="frame" x="425" y="529" width="128" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="0.35610524919999997" blue="0.75061158459999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Add To Cart">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
@@ -130,7 +134,7 @@
                                     <segue destination="Lqr-u7-5f9" kind="presentation" identifier="addToCart" id="Boi-Ik-fpy"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ihY-jQ-HZa" colorLabel="IBBuiltInLabel-Blue">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ihY-jQ-HZa" colorLabel="IBBuiltInLabel-Blue">
                                 <rect key="frame" x="200" y="147" width="200" height="200"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQ5-B9-64E">
@@ -145,10 +149,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTG-Db-kCf">
-                                <rect key="frame" x="47" y="529" width="59" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTG-Db-kCf">
+                                <rect key="frame" x="47" y="529" width="76" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="0.35610524919999997" blue="0.75061158459999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
@@ -182,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xwh-s5-7Ij" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1704" y="366"/>
+            <point key="canvasLocation" x="1698" y="364"/>
         </scene>
         <!--Cart View Controller-->
         <scene sceneID="KRm-2G-e6b">
@@ -223,12 +229,14 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1j-41-h7n">
-                                <rect key="frame" x="16" y="544" width="45" height="36"/>
+                                <rect key="frame" x="16" y="544" width="56" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="0.35610524919999997" blue="0.75061158459999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="45" id="GDB-C2-6yb"/>
+                                    <constraint firstAttribute="width" constant="56" id="GDB-C2-6yb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -242,23 +250,28 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUG-Nr-Lqf">
-                                <rect key="frame" x="494" y="546" width="106" height="34"/>
+                                <rect key="frame" x="491" y="546" width="98" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.35610524919999997" blue="0.75061158459999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="lc6-Wq-onM"/>
-                                    <constraint firstAttribute="width" constant="106" id="pjl-a8-EJF"/>
+                                    <constraint firstAttribute="width" constant="98" id="pjl-a8-EJF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Checkout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="YsI-vd-QfZ" kind="presentation" identifier="checkOut" id="qgd-pr-4E4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KfI-z3-xqw">
-                                <rect key="frame" x="254" y="545" width="85" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KfI-z3-xqw">
+                                <rect key="frame" x="240" y="545" width="92" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="0.35610524919999997" blue="0.75061158459999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="Clear Cart"/>
+                                <state key="normal" title="Clear Cart">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="clearCartPressed:" destination="Lqr-u7-5f9" eventType="touchUpInside" id="ayx-si-LII"/>
                                 </connections>
@@ -267,12 +280,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="B1j-41-h7n" firstAttribute="leading" secondItem="nNc-br-T4g" secondAttribute="leading" constant="16" id="65o-WX-Eky"/>
-                            <constraint firstAttribute="centerX" secondItem="KfI-z3-xqw" secondAttribute="centerX" constant="3.5" id="APY-Pq-8mg"/>
+                            <constraint firstAttribute="centerX" secondItem="KfI-z3-xqw" secondAttribute="centerX" constant="14" id="APY-Pq-8mg"/>
                             <constraint firstItem="YUG-Nr-Lqf" firstAttribute="top" secondItem="B1j-41-h7n" secondAttribute="top" constant="2" id="D3K-r6-WMo"/>
                             <constraint firstItem="qCd-zT-I1g" firstAttribute="top" secondItem="h2r-cV-xYk" secondAttribute="bottom" id="GyY-bz-0MD"/>
                             <constraint firstAttribute="trailing" secondItem="qCd-zT-I1g" secondAttribute="trailing" id="INg-1U-RFF"/>
                             <constraint firstItem="1ES-G5-pTS" firstAttribute="top" secondItem="nNc-br-T4g" secondAttribute="bottom" constant="22" id="LUH-ts-PW5"/>
-                            <constraint firstItem="YUG-Nr-Lqf" firstAttribute="trailing" secondItem="bwg-aA-63g" secondAttribute="trailingMargin" constant="16" id="PCt-aW-Iyd"/>
+                            <constraint firstItem="YUG-Nr-Lqf" firstAttribute="trailing" secondItem="bwg-aA-63g" secondAttribute="trailingMargin" constant="5" id="PCt-aW-Iyd"/>
                             <constraint firstItem="qCd-zT-I1g" firstAttribute="leading" secondItem="nNc-br-T4g" secondAttribute="leading" id="SfE-5O-Vsv"/>
                             <constraint firstItem="B1j-41-h7n" firstAttribute="top" secondItem="nNc-br-T4g" secondAttribute="bottom" constant="68" id="crU-wc-wZS"/>
                             <constraint firstItem="GVn-3M-Oce" firstAttribute="top" secondItem="KfI-z3-xqw" secondAttribute="bottom" constant="19" id="cv8-AX-ElB"/>
@@ -306,16 +319,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHq-uR-Mib">
-                                <rect key="frame" x="275" y="525" width="50" height="35"/>
-                                <state key="normal" title="Finish"/>
-                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="132" y="520" width="50" height="35"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Mzg-aE-FbM"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take this QR code to a Kiosk" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0d-cs-DUA">
                                 <rect key="frame" x="185" y="48" width="229" height="22.5"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="19"/>
@@ -329,6 +332,19 @@
                                     <rect key="frame" x="11" y="128" width="316" height="318"/>
                                 </variation>
                             </webView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHq-uR-Mib">
+                                <rect key="frame" x="267" y="525" width="66" height="35"/>
+                                <color key="backgroundColor" red="0.0" green="0.35610524919999997" blue="0.75061158459999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Finish">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="132" y="520" width="50" height="35"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Mzg-aE-FbM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -353,7 +369,7 @@
         <image name="landingCircle" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Fux-cS-Ih6"/>
+        <segue reference="Xcu-PJ-o7T"/>
         <segue reference="gF2-Qc-k0Z"/>
     </inferredMetricsTieBreakers>
 </document>
